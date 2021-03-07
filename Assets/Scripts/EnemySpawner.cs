@@ -8,6 +8,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
    [SerializeField] private Enemy _template;
+   
    private SpawnPoint[] _spawnPoints;
 
    private void Awake()
