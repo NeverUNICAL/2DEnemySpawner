@@ -8,6 +8,8 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
    [SerializeField] private Enemy _template;
+   [SerializeField] private float _waitingUntilSpawnEnemy;
+   
    private SpawnPoint[] _spawnPoints;
 
    private void Awake()
@@ -26,7 +28,7 @@ public class EnemySpawner : MonoBehaviour
       {
          Instantiate(_template, point.transform.position, quaternion.identity);
          
-         yield return new WaitForSeconds(2F);
+         yield return new WaitForSeconds(_waitingUntilSpawnEnemy);
       }
    }
 }

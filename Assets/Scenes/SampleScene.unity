@@ -302,6 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _template: {fileID: 3425229736155810168, guid: c44a2455477cdd94d906fc0a9eb9a117,
     type: 3}
+  _waitingUntilSpawnEnemy: 2
 --- !u!4 &514832474
 Transform:
   m_ObjectHideFlags: 0
